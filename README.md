@@ -29,3 +29,20 @@
     - add/remove columns
     - rename columns
     - modify constraints
+
+## Creating A Virtual Environment With Necessary Dependencies
+
+- Create an empty directory `mkdir name-of-project`
+- `cd` into the new folder
+- Check your current Python version - `python3 --version`
+    
+    ```bash
+    tomastobar@tomass-mbp create-a-virtual-env % python3 --version
+    Python 3.8.13
+    ```
+    
+- Create a virtual environment using your current Python version
+    - `pipenv --python <python-version>`
+- Install the dependencies, `alembic`, and `sqlalchemy`
+    - `pipenv install alembic sqlachemy`
+    - It would not hurt to also add the `ipdb` debugger to our Virtual Env
