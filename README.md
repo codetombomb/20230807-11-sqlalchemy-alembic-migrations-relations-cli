@@ -44,5 +44,5 @@
 - Create a virtual environment using your current Python version
     - `pipenv --python <python-version>`
 - Install the dependencies, `alembic`, and `sqlalchemy`
-    - `pipenv install alembic sqlachemy`
+    - `pipenv install alembic sqlalchemy==1.4.41`
     - It would not hurt to also add the `ipdb` debugger to our Virtual Env
