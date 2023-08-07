@@ -32,7 +32,6 @@
   - rename columns
   - modify constraints
 
----  
 
 ## Initializing Migrations
 
@@ -51,7 +50,7 @@ yourproject/
 
 ### [Taking a look at the file structure](https://alembic.sqlalchemy.org/en/latest/tutorial.html#the-migration-environment:~:text=The%20directory%20includes%20these%20directories/files%3A)
 
-- **`alembic`** - This directory lives within your application’s source tree and is the home of the migration environment.
+- **`migrations`** - This directory lives within your application’s source tree and is the home of the migration environment.
 - **`env.py`** - This is a Python script that is run whenever the alembic migration tool is invoked. It contains instructions to configure and generate a SQLAlchemy engine, procure a connection from that engine, and then invoke the migration engine using the connection for database connectivity.
 - **`README`** - Included with the various environment templates, should have something informative.
 - **`script.py.mako`** - This is a Mako template file which is used to generate new migration scripts. It helps generate new files within the **`versions/`** directory.
