@@ -31,24 +31,6 @@
   - rename columns
   - modify constraints
 
-## Create a schema
-
-- Question: Can anyone tell me what a schema is?
-- Defining a schema
-  - In the main directory, create a `[models.py](http://models.py)` file and add the following code [from the code example in the docs](https://docs.sqlalchemy.org/en/14/orm/mapping_api.html#sqlalchemy.orm.declarative_base):
-    ```python
-    from sqlalchemy.orm import declarative_base
-
-    Base = declarative_base()
-    ```
-  - `declaritive_base` - function that when invoked, returns a base class that our Python classes will inherit from
-    - By inheriting from this class, we are establishing a connection between SQLAlchemy and our Python classes.
-    - The `Base` class will store data about each class that inherits from it (`Base.metadata`)
-- Code demo
-  - Creating a schema
-  - Generate and run migrations
-
-
 ## Evolving The DB Through Migrations
 
 Create the following migrations:
